@@ -1,2 +1,4 @@
-﻿  Main.cpp
-  Gomoku.vcxproj -> C:\Users\chene\OneDrive\桌面\Final-Project\Gomoku\x64\Debug\Gomoku.exe
+﻿  Gomoku.cpp
+C:\Users\chene\OneDrive\桌面\Final-project\Final-project\Gomoku\Gomoku\Gomoku.cpp(19): warning C4715: 'toSymbol': 不是所有控制路徑都傳回值
+  LINK : 最後的累加連結找不到或未建置 C:\Users\chene\OneDrive\桌面\Final-project\Final-project\Gomoku\x64\Debug\Gomoku.exe，正在執行完整連結
+  Gomoku.vcxproj -> C:\Users\chene\OneDrive\桌面\Final-project\Final-project\Gomoku\x64\Debug\Gomoku.exe
