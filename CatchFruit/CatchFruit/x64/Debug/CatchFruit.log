@@ -32,16 +32,54 @@ C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(52,1
 C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(52,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
 C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(55,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
 C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(55,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(60,6): error C2182: 'fruit_draw': 此 'void' 的使用無效
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(60,24): error C2065: 'f': 未宣告的識別項
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(61,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,15): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,5): error C2365: 'putimage': 重複定義，先前的定義是 '函式'
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,14): error C2065: 'f': 未宣告的識別項
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,27): error C2065: 'f': 未宣告的識別項
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,40): error C2065: 'res': 未宣告的識別項
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,56): error C2065: 'f': 未宣告的識別項
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,1): error C2059: 語法錯誤: '}'
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(66,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(66,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(61,6): error C2182: 'spr_draw': 此 'void' 的使用無效
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(61,23): error C2065: 'spr': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,17): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,5): error C2365: 'putimage': 重複定義，先前的定義是 '函式'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,14): error C2065: 'spr': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,22): error C2065: 'spr': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,31): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(64,1): error C2059: 語法錯誤: '}'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(64,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(67,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(67,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(73,6): error C2182: 'fruit_init': 此 'void' 的使用無效
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(73,24): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(73,27): error C2062: 未預期的類型 'double'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(74,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(74,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(81,6): error C2182: 'fruit_draw': 此 'void' 的使用無效
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(81,24): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(82,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,15): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,5): error C2365: 'putimage': 重複定義，先前的定義是 '函式'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,14): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,27): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,40): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(83,56): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(84,1): error C2059: 語法錯誤: '}'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(84,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(88,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(88,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(101,15): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(102,15): error C2065: 'player': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(102,55): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(102,5): error C3861: 'spr_init': 找不到識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(105,20): error C2065: 'fruit': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(105,9): error C2064: 詞彙不等於使用 3 引數的函式
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(117,5): error C2665: 'loadimage': 沒有任何多載函式可以轉換所有引數類型
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include\easyx.h(258,6):
+  可能是 'void loadimage(IMAGE *,LPCTSTR,int,int,bool)'
+  	C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(117,5):
+  	'void loadimage(IMAGE *,LPCTSTR,int,int,bool)': 無法將引數 2 從 'const char [15]' 轉換為 'LPCTSTR'
+  		C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(117,24):
+  		指向的型別沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或小括號內的函式樣式轉換
+  C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(117,5):
+  當嘗試符合引數清單 '(IMAGE *, const char [15])' 時
+  
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(125,19): error C2065: 'player': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(128,24): error C2065: 'fruit': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(128,13): error C2064: 詞彙不等於使用 1 引數的函式
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(136,28): error C2065: 'fruit': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(136,17): error C3861: 'fruit_move': 找不到識別項

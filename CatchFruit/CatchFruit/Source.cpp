@@ -51,9 +51,30 @@ void res_init(Res* res)
     }
 }
 
+void spr_init(Sprite* spr, double x, double y, double vx)
+{
+    spr->x = x;
+    spr->y = y;
+    spr->vx = vx;
+}
+
 void spr_draw(Sprite* spr)
 {
     putimage(spr->x, spr->y, &res.img_player);
+}
+
+void spr_moveBy(Sprite* spr, double dx, double dy)
+{
+    spr->x += dx;
+    spr->y += dy;
+}
+
+// 初始化水果結構
+void fruit_init(Fruit* f, double x, double y)
+{
+    spr_init(&f->_super, x, y, 0);
+    f->type = rand() % 3;
+    f->vy = (rand() % 50) / 100.0 + FRUIT_FALL_SPEED;
 }
 
 // 繪製水果
@@ -62,12 +83,40 @@ void fruit_draw(Fruit* f)
     putimage(f->_super.x, f->_super.y, res.img_fruit + f->type);
 }
 
+// 移動水果
+void fruit_move(Fruit* f)
+{
+    spr_moveBy(&f->_super, 0, f->vy);
+    if (f->_super.y > GAME_HEIGHT)
+    {
+        f->_super.y = 0;
+        f->type = rand() % 3;
+        f->vy = (rand() % 80) / 100.0 + FRUIT_FALL_SPEED;
+    }
+}
+
+// 初始化遊戲
+void init()
+{
+    res_init(&res);
+    spr_init(&player, PLAYER_INITIAL_X, GAME_HEIGHT - res.img_player.getheight() - PLAYER_INITIAL_Y_OFFSET, 0);
+    for (int i = 0; i < MAX_FRUITS; i++)
+    {
+        fruit_init(fruit + i, rand() % GAME_WIDTH, rand() % 50);
+    }
+}
+
 int main()
 {
     initgraph(GAME_WIDTH, GAME_HEIGHT, EX_SHOWCONSOLE);
 
+    init();
+    bool canmoved = false;
+
     IMAGE img_bk;
     loadimage(&img_bk, "./image/bk.jpg");
+
+    bool gameEnded = false;
 
     while (true)
     {
@@ -78,6 +127,25 @@ int main()
         {
             fruit_draw(fruit + i);
         }
+        EndBatchDraw();
+
+        if (!gameEnded)
+        {
+            for (int i = 0; i < MAX_FRUITS; i++)
+            {
+                fruit_move(fruit + i);
+            }
+
+            static ExMessage msg;
+            while (peekmessage(&msg, EX_MOUSE))
+            {
+                if (msg.message == WM_MOUSEMOVE)
+                {
+                    canmoved = true;
+                }
+            }
+        }
+        Sleep(10);
     }
 
     closegraph();
