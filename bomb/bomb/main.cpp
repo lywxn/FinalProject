@@ -8,6 +8,8 @@
 
 void initMap(int map[ROW][COL]);
 void drawMap(int map[ROW][COL], IMAGE img[]);
+void mouseEvent(int map[ROW][COL]);
+void openNull(int map[ROW][COL], int row, int col);
 
 void showMap(int map[ROW][COL])
 {
@@ -46,6 +48,7 @@ int main()
 
     while (true)
     {
+        mouseEvent(map);
         drawMap(map, img);
 
 
@@ -137,3 +140,42 @@ void drawMap(int map[ROW][COL], IMAGE img[])
     }
 }
 
+void mouseEvent(int map[ROW][COL])
+{
+    ExMessage msg;
+    if (peekmessage(&msg, EX_MOUSE))//EM
+    {
+        int r = msg.y / IMGW;
+        int c = msg.x / IMGW;
+        if (msg.message == WM_LBUTTONDOWN)
+        {
+            if (map[r][c] >= 19 && map[r][c] <= 28)
+            {
+                map[r][c] -= 20;
+                openNull(map, r, c);
+               
+                showMap(map);
+            }
+
+        }
+    }
+}
+
+void openNull(int map[ROW][COL], int row, int col)
+{
+    if (map[row][col] == 0)
+    {
+        for (int i = row - 1; i <= row + 1; i++)
+        {
+            for (int k = col - 1; k <= col + 1; k++)
+            {
+                if ((i >= 0 && i < ROW && k >= 0 && k < COL) && map[i][k] >= 19 && map[i][k] <= 28)
+                {
+                    map[i][k] -= 20;
+                    openNull(map, i, k);
+
+                }
+            }
+        }
+    }
+}
