@@ -1,11 +1,11 @@
 ﻿  main.cpp
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(46,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(58,25): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(58,17): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(73,36): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(73,23): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(133,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(170,25): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(163,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\catchfruit\main.cpp(173,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  catchfruit.vcxproj -> C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\x64\Debug\catchfruit.exe
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(52,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(66,25): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(66,17): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(81,36): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(81,23): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(141,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(183,25): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(177,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\catchfruit\main.cpp(186,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  catchfruit.vcxproj -> C:\Users\user\OneDrive\桌面\FinalProject\catchfruit\x64\Debug\catchfruit.exe
