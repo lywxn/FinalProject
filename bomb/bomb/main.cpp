@@ -10,7 +10,7 @@ void initMap(int map[ROW][COL]);
 void drawMap(int map[ROW][COL], IMAGE img[]);
 void mouseEvent(int map[ROW][COL]);
 void openNull(int map[ROW][COL], int row, int col);
-
+void judge(int map[ROW][COL], int row, int col);
 void showMap(int map[ROW][COL])
 {
     for (int i = 0; i < ROW; i++)
@@ -77,8 +77,10 @@ int main()
 }
 void initMap(int map[ROW][COL])
 {
+    //把地圖清零
     memset(map, 0, ROW * COL * sizeof(int));
 
+    //地圖裡埋10個雷,雷是-1
     for (int i = 0; i < 10;)
     {
         int r = rand() % ROW;
@@ -86,11 +88,11 @@ void initMap(int map[ROW][COL])
         if (map[r][c] == 0)
         {
             map[r][c] = -1;
-            i++;
+            i++;    //只有成功設置雷我的i才增加
         }
     }
 
-
+    //雷所在的九宮格數值都加
     for (int i = 0; i < ROW; i++)
     {
         for (int k = 0; k < COL; k++)
@@ -108,7 +110,7 @@ void initMap(int map[ROW][COL])
             }
         }
     }
-
+    //所有格子全都遮起來
     for (int i = 0; i < ROW; i++)
     {
         for (int k = 0; k < COL; k++)
@@ -120,6 +122,7 @@ void initMap(int map[ROW][COL])
 
 void drawMap(int map[ROW][COL], IMAGE img[])
 {
+    //把裡面的數字轉換成對應的圖片
     for (int i = 0; i < ROW; i++)
     {
         for (int k = 0; k < COL; k++)
@@ -153,7 +156,7 @@ void mouseEvent(int map[ROW][COL])
             {
                 map[r][c] -= 20;
                 openNull(map, r, c);
-               
+                judge(map, r, c);
                 showMap(map);
             }
 
@@ -175,6 +178,58 @@ void openNull(int map[ROW][COL], int row, int col)
                     openNull(map, i, k);
 
                 }
+            }
+        }
+    }
+}
+
+void judge(int map[ROW][COL], int row, int col)
+{
+    //如果點到雷就直接結束遊戲，點一個雷其他雷都顯示出來
+    if (map[row][col] == -1)
+    {
+        for (int i = 0; i <= ROW; i++)
+        {
+            for (int k = 0; k <= COL; k++)
+            {
+                if (map[i][k] == 19)
+                {
+                    map[i][k] -= 20;
+                    openNull(map, i, k);
+
+                }
+            }
+        }
+        isOver = true;
+    }
+    else //如果雷都沒被點到,玩家勝利
+    {
+        int nonMineCount = 0;
+        for (int i = 0; i < ROW; i++)
+        {
+            for (int k = 0; k < COL; k++)
+            {
+                if (map[i][k] >= 0 && map[i][k] <= 8 && map[i][k] != 20)
+                {
+                    nonMineCount++;
+                }
+            }
+        }
+
+        if (nonMineCount == ROW * COL - 10)
+        {
+            // 所有非地雷的方格都已經打開 - 獲勝！
+            isOver = true;
+            int ret = MessageBox(GetHWnd(), "你贏了,再來一把?", "提示", MB_OKCANCEL);
+            if (ret == IDOK)
+            {
+                initMap(map);
+                showMap(map);
+                isOver = false;
+            }
+            else if (ret == IDCANCEL)
+            {
+                exit(666);
             }
         }
     }
