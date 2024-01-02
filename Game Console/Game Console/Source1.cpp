@@ -405,6 +405,7 @@ int main()
     switch (choice)
     {
     case 1:
+
     {
 
         initgraph(COL * IMGW, ROW * IMGW, EX_SHOWCONSOLE);
@@ -430,6 +431,7 @@ int main()
             mouseEvent(map);
             drawMap(map, img);
 
+
             if (isOver)
             {
                 int ret = MessageBox(GetHWnd(), "你踩到雷了,再來一把?", "hint", MB_OKCANCEL);
@@ -444,53 +446,63 @@ int main()
                 {
                     exit(666);
                 }
+
             }
         }
+
         showMap(map);
+
         getchar();
+        return 0;
     }
     break;
     case 2:
-    {
-        initgraph(GAME_WIDTH, GAME_HEIGHT, EX_SHOWCONSOLE);
 
+    {
+        initgraph(GAME_WIDTH, GAME_HEIGHT, EX_SHOWCONSOLE);// 初始化圖形視窗
+        countdown();// 遊戲倒數3秒
         srand(time(NULL));
-        countdown();
 
         init();
-        bool canmoved = false;
 
-        IMAGE img_bk;
-        loadimage(&img_bk, "./image/bk.jpg");
-
+        // 遊戲狀態變數
         int score = 0;
+        bool canmoved = false;
+        bool gameEnded = false;
         int gameTime = GAME_TIME_LIMIT;
         time_t startTime = time(NULL);
 
-        bool gameEnded = false;
+        // 背景圖
+        IMAGE img_bk;
+        loadimage(&img_bk, "./image/bk.jpg");
 
+        // 主遊戲迴圈
         while (true)
         {
             BeginBatchDraw();
+
+            // 繪製背景
             putimage(0, 0, &img_bk);
+
+            //繪製玩家
             spr_draw(&player);
+
+            // 繪製水果
             for (int i = 0; i < MAX_FRUITS; i++)
             {
                 fruit_draw(fruit + i);
             }
 
             // 顯示目前分數
+            char scoreText[20];
             settextstyle(20, 0, _T("楷體"));
             settextcolor(WHITE);
-
-            char scoreText[20];
             sprintf(scoreText, "目前分數：%d", score);
             outtextxy(20, 20, scoreText);
 
-            // 顯示遊戲剩餘時間的數字
+            // 顯示遊戲剩餘時間
             settextstyle(20, 0, _T("楷體"));
             settextcolor(WHITE);
-
             int elapsedTime = difftime(time(NULL), startTime);
             int remainingTime = (gameTime - elapsedTime) > 0 ? (gameTime - elapsedTime) : 0;
             char timeText[20];
@@ -499,6 +511,7 @@ int main()
 
             EndBatchDraw();
 
+            // 判斷是否結束
             if (remainingTime <= 0 && !gameEnded)
             {
                 gameEnded = true;  // 設置遊戲結束標誌
@@ -506,11 +519,13 @@ int main()
 
             if (!gameEnded)
             {
+                // 移動水果
                 for (int i = 0; i < MAX_FRUITS; i++)
                 {
                     fruit_move(fruit + i);
                 }
 
+                // 偵測滑鼠移動
                 static ExMessage msg;
                 while (peekmessage(&msg, EX_MOUSE))
                 {
@@ -520,6 +535,7 @@ int main()
                     }
                 }
 
+                // 左右移動
                 if (canmoved)
                 {
                     if (msg.x < player.x - PLAYER_MOVE_SPEED)
@@ -537,7 +553,10 @@ int main()
 
             Sleep(10);  // 降低 CPU 使用率
         }
+
+        // 關閉視窗
         closegraph();
+        return 0;
     }
     break;
     case 3:
@@ -545,6 +564,7 @@ int main()
         int key = 0;
 
         system("color E0");
+
 
         int panel[15][15] =
         { {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -588,6 +608,7 @@ int main()
             //如果有人贏了，顯示贏家是誰，並結束程式
             if (winner != 0) {
                 printf("五子連珠！玩家【%c】勝！\n", toSymbol(winner));
+                return 0;
             }
 
             //接收鍵盤事件
@@ -630,16 +651,23 @@ int main()
                     if (turn == O) turn = X;
                     else turn = O;
                 }
+                /*else
+                {
+                    printf("這裡已經有子了，重來！\n");
+                    system("pause");
+                }*/
                 break;
             case 27:
                 printf("結束程式……\n");
                 system("pause");
+                return 0;
             default:
                 printf("無效按鍵！\n");
                 system("pause");
                 break;
             }
         }
+        return 0;
     }
     break;
     case 4:
