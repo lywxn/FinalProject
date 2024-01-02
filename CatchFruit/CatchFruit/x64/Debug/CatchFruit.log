@@ -1,0 +1,47 @@
+﻿  Source.cpp
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(9,8): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(9,5): error C2146: 語法錯誤: 遺漏 ';' (在識別項 'res' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(10,14): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(10,8): error C2146: 語法錯誤: 遺漏 ';' (在識別項 'player' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(11,12): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(11,7): error C2146: 語法錯誤: 遺漏 ';' (在識別項 'fruit' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(31,12): error C3646: '_super': 未知的覆寫規範
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(31,18): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(43,6): error C2182: 'res_init': 此 'void' 的使用無效
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(43,20): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(44,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(45,15): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(45,5): error C2365: 'loadimage': 重複定義，先前的定義是 '函式'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(45,16): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,5): error C2059: 語法錯誤: 'for'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,5): error C2143: 語法錯誤: 遺漏 ')' (在 ';' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,23): error C2143: 語法錯誤: 遺漏 ';' (在 '<' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,23): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,23): error C2059: 語法錯誤: '<'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,29): error C2143: 語法錯誤: 遺漏 ';' (在 '++' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,29): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,28): error C2086: 'int i': 重複定義
+  C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,21):
+  請參閱 'i' 的宣告
+  
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,29): error C2059: 語法錯誤: '++'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(46,31): error C2059: 語法錯誤: ')'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(47,5): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(47,5): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(52,1): error C2059: 語法錯誤: '}'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(52,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(55,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(55,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(60,6): error C2182: 'fruit_draw': 此 'void' 的使用無效
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(60,24): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(61,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,15): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,5): error C2365: 'putimage': 重複定義，先前的定義是 '函式'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,14): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,27): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,40): error C2065: 'res': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(62,56): error C2065: 'f': 未宣告的識別項
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,1): error C2059: 語法錯誤: '}'
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(63,1): error C2143: 語法錯誤: 遺漏 ';' (在 '}' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(66,1): error C2143: 語法錯誤: 遺漏 ';' (在 '{' 之前)
+C:\Users\user\OneDrive\桌面\FinalProject\CatchFruit\CatchFruit\Source.cpp(66,1): error C2447: '{': 遺漏函式標頭 (舊樣式型式清單?)
