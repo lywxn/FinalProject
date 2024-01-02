@@ -1,0 +1,9 @@
+﻿  Source1.cpp
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(228,25): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(228,17): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(243,36): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(243,23): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(457,19): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(494,29): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\user\OneDrive\桌面\Game Console\Game Console\Source1.cpp(313): warning C4715: 'toSymbol': 不是所有控制路徑都傳回值
+  Game Console.vcxproj -> C:\Users\user\OneDrive\桌面\Game Console\x64\Debug\Game Console.exe
